@@ -6,13 +6,16 @@
 
     <style>
         body{
+            background-color: lightgray;
             width: 100%;
             margin: 0;
         }
         .bg{
             margin: 20px 20px 0 20px;
-            background-color:lightgray;
-            height: 200px
+            background-color: white;
+            height: auto;
+            box-shadow: 5px 5px 5px #888888;
+            border-radius: 5px;
         }
         .rectangle{
             width: 100%;
@@ -33,13 +36,17 @@
         .clear{
             clear: both;
         }
+        .wei{
+            position:relative;
+            margin-left: 40%;
+        }
 
     </style>
 
 </head>
 <body>
 
-<h1 style="font-size: 150%;color: aliceblue" class="rectangle" >
+<h1 style="font-size: 150%;" class="rectangle" >
 
     <img src="image/wxbzhuye3.png" width="100px" alt="主页">
 
@@ -49,20 +56,20 @@
     <a href="http://www.baidu.com" target="_blank" style="text-decoration: none">
         <img src="image/search(1).png" width="40px" border="0" style="float: left;margin: 20px 0 0 20px " >
     </a>
-    <div style="color:#ffffff;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我的个人主页</div>
+    <!--<div style="color:#ffffff;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我的个人主页</div>-->
 </h1>
 
-<h2>
-    <div>
-        &nbsp;一个小故事
+<h2 style="box-shadow:5px 5px 5px #888888;background-color: white;margin-left: 40%;width:15%;text-align: center;">
+    <div  >
+        一个小故事
     </div>
 </h2>
 <h2 class="bg">
     <div >
-        <p style="font-size: 20px;font-family: 'Microsoft YaHei UI';font-weight: normal">
+        <p style="font-size: 20px;font-family: 'Microsoft YaHei UI';font-weight: normal;text-indent: 32px">
             在我四岁那年，父亲送了我一台Xbox。你们了解的，如果我没记错的话那是2001年的款式，一个黑色硬梆梆的盒子。
             我和父亲一起玩了很多游戏，非常开心，直到两年后，我的父亲去世了。<br>
-            之后的十年时光里，<b>我再也没有碰过这台游戏机</b>。然而当我再度启动它时，我发现了一些事情......
+            &nbsp;&nbsp;&nbsp;&nbsp;之后的十年时光里，<b>我再也没有碰过这台游戏机</b>。然而当我再度启动它时，我发现了一些事情......
             我和父亲曾经一起玩过一款赛车游戏叫《越野挑战赛》，在当时，这真的是款很好玩的游戏。
             就在我重新启动这款游戏时，我发现了一个真正的<a style="text-decoration: none" href="https://www.baidu.com/s?wd=%E5%B9%BD%E7%81%B5&rsv_spt=1&rsv_iqid=0xd6c506d100044bc2&issp=1&f=8&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&rsv_sug3=2&rsv_sug2=0&inputT=2257&rsv_sug4=2258"><b>幽灵</b></a>！
 
@@ -77,7 +84,7 @@
 </h2>
 <h3 class="bg">
     <div >
-        <img src="image/2.jpeg" width="200px" style="float: left" >
+        <img src="image/2.jpeg" style="float: left;" width="100px" >
         <div style="font-family: 宋体 " >
             <br>
             <p><b> 这是路飞!</b></p>
@@ -85,20 +92,22 @@
     </div>
 </h3>
 
-<h2 class="clear">
+<h2 class="bg">
     <br>
     接下来是一个乱七八糟的东西。。。。
-</h2>
+
 <ol>
     <li>水星</li>
     <li>金星</li>
     <li>地球</li>
 </ol>
+</h2>
 
-<table border="1">
-    <tr>
-        <td>日期  </td>
-        <td>天气  </td>
+<h3 class="bg">
+<table border="0.5" width="100%" style="text-align: center" >
+    <tr bgcolor="#ffebcd" >
+        <td>日 期</td>
+        <td>天 气</td>
 
     </tr>
     <tr>
@@ -110,9 +119,13 @@
         <td>rain</td>
     </tr>
 </table>
-<form >
+</h3>
+
+<h3 class="bg" style="text-align: center">
+<form  >
+    你的个人信息：
     <div>
-        请输入姓名：<input type="text" placeholder="your name">
+        请输入姓名：<input type="text" placeholder="your name" >
         <br>
         请输入密码：<input type="password" placeholder="your password">
         <br>
@@ -126,25 +139,27 @@
     </div>
 
     <div>
-        <br>
-        <label>hobby</label>
-        <select>
+
+        <label >hobby </label><span style="">:</span>
+        <select >
             <option value="book">read book</option>
             <option value="sports">sports</option>
             <option value="web">computer game</option>
             <option value="programme">programme</option>
         </select>
         <br>
+       <div style="height: 40px"> 汽车品牌:
         <input type="checkbox" name="car" value="1">宝马
         <input type="checkbox" name="car" value="2">奔驰
         <input type="checkbox" name="car" value="3">劳斯莱斯
         <input type="checkbox" name="car" value="4">玛莎拉蒂
     </div>
+    </div>
 
     <div>
         <br>
         城市:
-        <select>
+        <select style="margin-right: 5%">
             <option value="b">北京</option>
             <option value="s">上海</option>
             <option value="h">杭州</option>
@@ -153,13 +168,17 @@
     </div>
     <div>
         <br>
-        个人描述:<input type="text" placeholder="自我介绍">
+        <span style="vertical-align: top">个人描述:</span><textarea placeholder="自我介绍" cols="40" rows="4"></textarea>
         <br>
     </div>
 </form>
 <br><br>
-<input type="submit" value="Submit">提交
+    <div >
+        <input type="submit" value="提交" style="width: 90%;margin-left: 5%;
+        border-radius:10px ;background-color: blue;height: 30px;border: none;color: white;text-align: center">
+    </div>
 
+</h3>
 
 <div style="font-family: sans-serif;font-weight: 100;margin-left: 90%" >&copy;2017 chencheng</div>
 
